@@ -2,7 +2,7 @@
     "name": "Fitness & Nutrition Tracker",
     "short_name": "FitTracker",
     "description": "Theo dõi sức khỏe, tập luyện và dinh dưỡng",
-    "start_url": "/",
+    "start_url": "/fitness-tracker-offline/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#3B82F6",
