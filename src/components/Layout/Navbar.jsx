@@ -1,19 +1,19 @@
-import { Moon, Sun, Dumbbell } from 'lucide-react';
-import { useDarkMode } from '../../hooks/useDarkMode';
+import { Moon, Sun, Dumbbell } from "lucide-react";
+import { useDarkMode } from "../../hooks/useDarkMode";
 
 export const Navbar = () => {
   const [darkMode, toggleDarkMode] = useDarkMode();
 
   const handleToggle = () => {
-    console.log('Toggle clicked! Current darkMode:', darkMode);
+    console.log("Toggle clicked! Current darkMode:", darkMode);
     toggleDarkMode();
-    console.log('After toggle');
+    console.log("After toggle");
   };
 
   return (
     <nav className="sticky top-0 z-40 bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 backdrop-blur-lg bg-opacity-90 dark:bg-opacity-90">
       <div className="max-w-7xl mx-auto px-4 py-4">
-        <div onClick={() => window.location.href = '/'} className="flex items-center justify-between cursor-pointer">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3">
             <div className="p-2.5 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl shadow-lg shadow-primary-500/20">
