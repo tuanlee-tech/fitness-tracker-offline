@@ -1,6 +1,5 @@
 {
   "name": "fitness-tracker",
-  "homepage": "https://tuanlee-tech.github.io/fitness-tracker-offline/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
