@@ -10,7 +10,8 @@ export const Timeline = () => {
   const [editingStat, setEditingStat] = useState(null);
   const [error, setError] = useState('');
   const [confirmDialog, setConfirmDialog] = useState({ isOpen: false, onConfirm: null });
-
+  const [isExpanded, setIsExpanded] = useState(false);
+  
   // Sort stats by date descending (newest first)
   const sortedStats = [...stats].sort((a, b) => new Date(b.date) - new Date(a.date));
 
@@ -47,8 +48,6 @@ export const Timeline = () => {
   };
 
   if (stats.length === 0) return null;
-
-  const [isExpanded, setIsExpanded] = useState(false);
 
   return (
     <div className="card transition-all duration-300">
